@@ -12,10 +12,6 @@ struct Topic {
     let intro: String
     let chapters: [Chapter]
 
-    /// Zusätzliches Transkript für Sprachausgabe (VoiceOver).
-    var accessibilityDescription: String {
-        "Lerngebiet \(title): \(intro)"
-    }
 }
 
 struct Formula {

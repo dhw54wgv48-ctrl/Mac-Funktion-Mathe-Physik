@@ -82,12 +82,11 @@ final class TopicViewController: NSViewController {
 
         view = wrapper
         view.wantsLayer = true
-        accessibilityDescription = topic.accessibilityDescription
     }
 }
 
 /// Formelsammlung als bildlaufbare Liste.
-final class FormulaViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+final class FormulaViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDelegate {
 
     private struct FormulaGroup {
         let topic: String
