@@ -121,10 +121,11 @@ enum ExerciseGenerator {
             let n = int(2, 6), a = int(2, 9), x0 = int(1, 4)
             // f(x) = a x^n, gesucht f'(x0)
             let answer = Double(a * n) * pow(Double(x0), Double(n - 1))
+            let derivative = a * n
             return Exercise(
                 question: "f(x) = \(a)x^\(n). Berechne f '(\(x0)).",
                 answer: answer,
-                hint: "Potenzregel: f'(x) = \(a · n) x^\(n - 1), dann x = \(x0) einsetzen.",
+                hint: "Potenzregel: f'(x) = \(derivative) x^\(n - 1), dann x = \(x0) einsetzen.",
                 tolerance: 0.01
             )
         default:
@@ -133,8 +134,8 @@ enum ExerciseGenerator {
             return Exercise(
                 question: "Berechne das Integral ∫₀^\(k) 3x² dx.",
                 answer: Double(k * k * k),
-                tolerance: 0.01,
-                hint: "Stammfunktion F(x) = x³, dann F(\(k)) − F(0)."
+                hint: "Stammfunktion F(x) = x³, dann F(\(k)) − F(0).",
+                tolerance: 0.01
             )
         }
     }

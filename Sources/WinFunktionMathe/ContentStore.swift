@@ -189,6 +189,12 @@ enum ContentStore {
                     "Eigenschaften: A·B ≠ B·A im Allgemeinen; 1 ist das neutrale Element über der Einheitsmatrix.",
                     "Determinante 2×2: det A = ad − bc."
                 ]),
+                Chapter(title: "Lineare Gleichungssysteme", body: [
+                    "Additionsverfahren: Zwei Gleichungen werden so addiert/subtrahiert, dass eine Variable entfällt.",
+                    "Einsetzungsverfahren: Eine Gleichung wird nach einer Variablen aufgelöst und in die andere eingesetzt.",
+                    "Lösbarkeit: genau eine Lösung, keine Lösung oder unendlich viele Lösungen."
+                ])
+            ]
         ),
         Topic(
             id: 6,
