@@ -189,10 +189,36 @@ enum ContentStore {
                     "Eigenschaften: A·B ≠ B·A im Allgemeinen; 1 ist das neutrale Element über der Einheitsmatrix.",
                     "Determinante 2×2: det A = ad − bc."
                 ]),
-                Chapter(title: "Lineare Gleichungssysteme", body: [
-                    "Additionsverfahren: Gleichungen werden so addiert, dass eine Variable entfällt.",
-                    "Einsetzungsverfahren: eine Gleichung wird nach einer Variablen aufgelöst und in die andere eingesetzt.",
-                    "Lösbarkeit: genau eine Lösung, keine Lösung oder unendlich viele Lösungen."
+        ),
+        Topic(
+            id: 6,
+            title: "Physik",
+            symbol: "🧲",
+            intro: "Mechanik, Elektrizitätslehre, Optik und Wärmelehre – die Physik-Kapitel der Lernsoftware.",
+            chapters: [
+                Chapter(title: "Mechanik", body: [
+                    "Geschwindigkeit (gleichförmig): v = s / t – Weg pro Zeit, Einheit m/s.",
+                    "Beschleunigung: a = Δv / Δt; gleichförmig beschleunigte Bewegung: s = ½ a t², v = a t.",
+                    "Newtonsche Grundgleichung: F = m · a (Kraft = Masse mal Beschleunigung, Einheit Newton).",
+                    "Freier Fall: v = g · t mit g ≈ 9,81 m/s²."
+                ]),
+                Chapter(title: "Arbeit, Energie, Leistung", body: [
+                    "Arbeit: W = F · s (Kraft mal Weg, Einheit Joule).",
+                    "Kinetische Energie: Ekin = ½ m v². Potentielle Energie: Epot = m g h.",
+                    "Leistung: P = W / t (Arbeit pro Zeit, Einheit Watt).",
+                    "Energieerhaltungssatz: In einem abgeschlossenen System bleibt die Gesamtenergie erhalten."
+                ]),
+                Chapter(title: "Elektrizitätslehre", body: [
+                    "Ohmsches Gesetz: U = R · I (Spannung = Widerstand mal Stromstärke).",
+                    "Leistung: P = U · I; elektrische Arbeit: W = P · t.",
+                    "Reihenschaltung: R_ges = R₁ + R₂ + …; Parallelschaltung: 1/R_ges = 1/R₁ + 1/R₂.",
+                    "Beispiel: Bei U = 12 V und R = 4 Ω fließt I = 3 A."
+                ]),
+                Chapter(title: "Optik und Wärmelehre", body: [
+                    "Snelliussches Brechungsgesetz: n₁ sin α = n₂ sin β.",
+                    "Linsen: Linsengleichung 1/f = 1/a + 1/b (a Gegenstandsweite, b Bildweite, f Brennweite).",
+                    "Wärmemenge: Q = m · c · ΔT (c spezifische Wärmekapazität, z. B. Wasser 4,19 kJ/(kg·K)).",
+                    "Wirkungsgrad: η = Nutzenenergie / zugeführte Energie (immer < 1 bei realen Maschinen)."
                 ])
             ]
         )
@@ -222,6 +248,14 @@ enum ContentStore {
         Formula(topic: "Stochastik", name: "Binomialverteilung", formula: "P(X = k) = C(n,k) pᵏ (1−p)ⁿ⁻ᵏ", note: "Erwartungswert n p"),
         Formula(topic: "Stochastik", name: "Standardabweichung", formula: "σ = √(Σ(xᵢ − x̄)² / n)", note: "Streuung um den Mittelwert x̄"),
         Formula(topic: "Lineare Algebra", name: "Vektorlänge", formula: "|a| = √(a₁² + a₂² + a₃²)", note: "Betrag eines Vektors"),
-        Formula(topic: "Lineare Algebra", name: "Skalarprodukt", formula: "a · b = a₁b₁ + a₂b₂ + a₃b₃", note: "a ⊥ b ⇔ a · b = 0")
+        Formula(topic: "Lineare Algebra", name: "Skalarprodukt", formula: "a · b = a₁b₁ + a₂b₂ + a₃b₃", note: "a ⊥ b ⇔ a · b = 0"),
+        Formula(topic: "Physik", name: "Grundgleichung der Mechanik", formula: "F = m · a", note: "Kraft in Newton, Masse in kg"),
+        Formula(topic: "Physik", name: "Geschwindigkeit / gleichf. Beschl. Bewegung", formula: "v = s/t, s = ½ a t²", note: "v in m/s, s in m"),
+        Formula(topic: "Physik", name: "Kinetische / potentielle Energie", formula: "Ekin = ½ m v², Epot = m g h", note: "g ≈ 9,81 m/s²"),
+        Formula(topic: "Physik", name: "Arbeit und Leistung", formula: "W = F s, P = W/t", note: "W in Joule, P in Watt"),
+        Formula(topic: "Physik", name: "Ohmsches Gesetz", formula: "U = R · I", note: "P = U · I elektrische Leistung"),
+        Formula(topic: "Physik", name: "Wärmemenge", formula: "Q = m c ΔT", note: "Wasser: c = 4,19 kJ/(kg·K)"),
+        Formula(topic: "Physik", name: "Brechungsgesetz", formula: "n₁ sin α = n₂ sin β", note: "Snelliussches Gesetz"),
+        Formula(topic: "Physik", name: "Linsengleichung", formula: "1/f = 1/a + 1/b", note: "f Brennweite, b Bildweite")
     ]
 }

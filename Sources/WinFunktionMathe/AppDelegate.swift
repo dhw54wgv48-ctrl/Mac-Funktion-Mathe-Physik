@@ -6,7 +6,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         let main = MainViewController()
         let window = NSWindow(contentViewController: main)
-        window.title = "WinFunktion Mathe"
+        window.title = "Mac Funktion Mathe-Physik"
         window.styleMask = [.titled, .closable, .miniaturizable, .resizable]
         window.contentMinSize = NSSize(width: 760, height: 520)
         window.makeKeyAndOrderFront(nil)

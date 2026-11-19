@@ -2,7 +2,7 @@
 # Baut WinFunktion Mathe als .app-Bundle im Ordner build/
 set -e
 
-APP_NAME="WinFunktion Mathe"
+APP_NAME="Mac Funktion Mathe-Physik"
 EXEC_NAME="WinFunktionMathe"
 BUNDLE_ID="com.example.winfunktion-mathe"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"

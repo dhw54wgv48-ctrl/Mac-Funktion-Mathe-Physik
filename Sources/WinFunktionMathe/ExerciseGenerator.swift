@@ -23,7 +23,8 @@ enum ExerciseGenerator {
         case 2: return geometry()
         case 3: return analysis()
         case 4: return stochastics()
-        default: return linearAlgebra()
+        case 5: return linearAlgebra()
+        default: return physics()
         }
     }
 
@@ -171,6 +172,47 @@ enum ExerciseGenerator {
             hint: "|a| = √(a₁² + a₂² + a₃²)",
             tolerance: 0.01
         )
+    }
+
+    // MARK: Physik
+
+    private static func physics() -> Exercise {
+        switch int(0, 3) {
+        case 0:
+            let m = int(2, 20), a = int(2, 8)
+            return Exercise(
+                question: "Ein Körper mit m = \(m) kg wird mit a = \(a) m/s² beschleunigt. Welche Kraft F (in Newton) wirkt auf ihn?",
+                answer: Double(m * a),
+                hint: "F = m · a",
+                tolerance: 0.01
+            )
+        case 1:
+            let v = int(5, 30), t = int(2, 12)
+            return Exercise(
+                question: "Ein Fahrzeug fährt \(t) s gleichförmig mit v = \(v) m/s. Welchen Weg s (in Metern) legt es zurück?",
+                answer: Double(v * t),
+                hint: "s = v · t",
+                tolerance: 0.01
+            )
+        case 2:
+            let u = int(6, 24), r = int(2, 12)
+            let i = Double(u) / Double(r)
+            return Exercise(
+                question: "An einem Widerstand R = \(r) Ω liegt die Spannung U = \(u) V. Wie groß ist die Stromstärke I (in Ampere, 2 Nachkommastellen)?",
+                answer: i,
+                hint: "Ohmsches Gesetz: I = U / R",
+                tolerance: 0.05
+            )
+        default:
+            let f = int(10, 80), s = int(2, 15)
+            let v = sqrt(2.0 * Double(f) * Double(s))
+            return Exercise(
+                question: "Ein Körper der Masse 1 kg wird mit F = \(f) N über \(s) m beschleunigt (W = F·s geht in Bewegungsenergie). Wie groß ist seine Endgeschwindigkeit v (m/s, 2 Nachkommastellen)?",
+                answer: v,
+                hint: "W = ½ m v² ⇒ v = √(2W/m)",
+                tolerance: 0.05
+            )
+        }
     }
 
     private static func binomial(_ n: Int, _ k: Int) -> Int {

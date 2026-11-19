@@ -1,12 +1,12 @@
-# WinFunktion Mathe (macOS)
+# Mac Funktion Mathe-Physik (macOS)
 
-Eine native Mac-App (Swift + AppKit), inspiriert von der klassischen Lernsoftware **WinFunktion Mathematik**. Sie funktioniert ohne externe Abhängigkeiten – nur Swift Package Manager und macOS 11+ werden benötigt.
+Eine native Mac-App (Swift + AppKit), inspiriert von den klassischen Lernsoftwaren **WinFunktion Mathematik / Physik**. Sie funktioniert ohne externe Abhängigkeiten – nur Swift Package Manager und macOS 11+ werden benötigt.
 
 ## Funktionen
 
 | Bereich | Beschreibung |
 | --- | --- |
-| 🧮 **Lerngebiete** | Arithmetik, Algebra, Geometrie, Analysis, Stochastik und Lineare Algebra mit Kapiteln, Erklärungen und Beispielen |
+| 🧮 **Lerngebiete** | Arithmetik, Algebra, Geometrie, Analysis, Stochastik, Lineare Algebra **und Physik** (Mechanik, Elektrizität, Optik, Wärme) mit Kapiteln, Erklärungen und Beispielen |
 | 🎓 **Übungen** | Zufällig generierte Aufgaben je Lerngebiet mit Antwortprüfung, Tipps und Punktestand |
 | 📚 **Formelsammlung** | Nach Themengebieten gruppierte Formeln (p-q-Formel, Satz des Pythagoras, Ableitungsregeln, Binomialverteilung u. v. m.) |
 | 📈 **Funktionsplotter** | Zeichnet beliebige Terme f(x) mit Achsen, Gitter und Zoom (z. B. `x^2 - 3`, `sin(x)`, `exp(x)/x`) |
@@ -18,7 +18,7 @@ Voraussetzung: macOS 11+ mit installiertem Swift (enthalten in Xcode Command Lin
 
 ```bash
 ./build.sh
-open "build/WinFunktion Mathe.app"
+open "build/Mac Funktion Mathe-Physik.app"
 ```
 
 Alternativ ohne Bundle:
@@ -54,4 +54,4 @@ Links in der Seitenleiste wird zwischen Lerngebieten und Werkzeugen gewechselt. 
 
 ## Lizenz
 
-MIT – freie Nutzung und Anpassung. „WinFunktion“ ist ein Begriff der ursprünglichen Windows-Lernsoftware; dieses Projekt ist eine eigenständige, unabhängige Neuimplementation für macOS.
+MIT – freie Nutzung und Anpassung. „WinFunktion“ ist ein Begriff der ursprünglichen Windows-Lernsoftware; dieses Projekt ist eine eigenständige, unabhängige Neuimplementation für macOS und deckt Mathematik **und** Physik ab.
