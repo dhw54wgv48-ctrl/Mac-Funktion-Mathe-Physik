@@ -9,6 +9,7 @@ Eine native Mac-App (Swift + AppKit), inspiriert von den klassischen Lernsoftwar
 | 🧮 **Lerngebiete** | Arithmetik, Algebra, Geometrie, Analysis, Stochastik, Lineare Algebra **und Physik** (Mechanik, Elektrizität, Optik, Wärme) mit Kapiteln, Erklärungen und Beispielen |
 | 🎓 **Übungen** | Zufällig generierte Aufgaben je Lerngebiet mit Antwortprüfung, Tipps und Punktestand |
 | 📚 **Formelsammlung** | Nach Themengebieten gruppierte Formeln (p-q-Formel, Satz des Pythagoras, Ableitungsregeln, Binomialverteilung u. v. m.) |
+| 🔬 **Physik-Simulationen** | **Schräge Rampe** (Kräftezerlegung mit Pfeilen, Reibung, Beschleunigung), **Optikbank** (Sammellinse mit Strahlengang nach Linsengleichung) und **Reihenschaltung** (U, R1, R2 → I, Teilspannungen, Leistungen) – jeweils mit Reglern |
 | 📈 **Funktionsplotter** | Zeichnet beliebige Terme f(x) mit Achsen, Gitter und Zoom (z. B. `x^2 - 3`, `sin(x)`, `exp(x)/x`) |
 | 🧮 **Taschenrechner** | Wissenschaftlicher Ausdrucks-Parser: `+ - * / ^`, Klammern, `sin cos tan sqrt ln log exp abs`, `pi`, `e` – mit Verlauf |
 
@@ -40,6 +41,8 @@ Sources/WinFunktionMathe/
 ├── main.swift                  App-Einstiegspunkt
 ├── AppDelegate.swift           Fenster- und App-Lebenszyklus
 ├── MainViewController.swift    Sidebar + Inhaltsbereich
+├── PhysicsModel.swift           Rechenmodelle der Simulationen
+├── PhysicsSimulations.swift     Rampe, Optikbank, Reihenschaltung
 ├── TopicDetailViews.swift      Lerngebiete + Formelsammlung
 ├── ExerciseViewController.swift Übungsmodus
 ├── PlotAndCalculatorViews.swift Funktionsplotter + Taschenrechner

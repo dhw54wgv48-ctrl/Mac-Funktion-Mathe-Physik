@@ -2,6 +2,7 @@ import AppKit
 
 enum SidebarKind {
     case topic(Int)
+    case simulations
     case exercises
     case formulas
     case plotter
@@ -24,6 +25,7 @@ final class MainViewController: NSViewController, NSTableViewDataSource, NSTable
 
     override func loadView() {
         var items: [SidebarItem] = ContentStore.topics.map { SidebarItem(title: $0.title, symbol: $0.symbol, kind: .topic($0.id)) }
+        items.append(SidebarItem(title: "Physik-Simulationen", symbol: "🔬", kind: .simulations))
         items.append(SidebarItem(title: "Übungen", symbol: "🎓", kind: .exercises))
         items.append(SidebarItem(title: "Formelsammlung", symbol: "📚", kind: .formulas))
         items.append(SidebarItem(title: "Funktionsplotter", symbol: "📈", kind: .plotter))
@@ -129,6 +131,8 @@ final class MainViewController: NSViewController, NSTableViewDataSource, NSTable
             } else {
                 detail = TopicViewController(topic: ContentStore.topics[0])
             }
+        case .simulations:
+            detail = SimulationViewController()
         case .exercises:
             detail = ExerciseViewController()
         case .formulas:
